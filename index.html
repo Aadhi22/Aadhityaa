@@ -15,6 +15,10 @@
       background-color: black;
       color: white;
     }
+.item:hover{
+  background-color: red;
+}
+
 
     .homepage {
       width: 100%;
@@ -32,20 +36,20 @@
       padding-top: 20px;
     }
 
-    .categories{
+    .categories {
       width: 100%;
       height: auto;
       font-family: Cairo;
     }
 
-  .item{
+    .item {
       background-color: white;
       width: 170px;
       height: 45px;
       color: black;
       text-align: center;
       display: inline-block;
-      font-size:25px;
+      font-size: 25px;
     }
 
     h1 {
@@ -65,6 +69,9 @@
         width: 1525px;
         height: 730px;
       }
+      .item:hover{
+        background-color: blue;
+      }
 
       .homepage {
         width: 100%;
@@ -83,20 +90,20 @@
         padding-top: 180px;
       }
 
-      .categories{
+      .categories {
         width: 100%;
         height: auto;
         font-family: Cairo;
       }
 
-    .item{
+      .item {
         background-color: white;
         width: 120px;
         height: 30px;
         color: black;
         text-align: center;
         display: inline-block;
-        font-size:15px;
+        font-size: 15px;
       }
 
       h1 {
@@ -126,31 +133,29 @@
         <h4 style="font-family: Montserrat, serif; color:white;">Professionally, a Software Engineer. As a stress-buster, I capture moments.<br />
           As a freelancer, I help businesses enhance their presence through logo design, <br />editing photos and videos for their business.<br />
           Apart from these, I also enjoy charcoal sketching and creating illustrations.<br /> And at last I create memes for fun on social media.</h4>
-        <br /><br />
-        <h5 style="font-family: serif;">Still sculpting the webpage... </h5>
+        <h5 style="font-family: Montserrat;">Portfolio below!</h5>
         <div class="categories">
-<br />
           <div class="item">
-            <img src="images/photo.png" height="15px" width="15px"/> Photos
+            <img id="photo" src="images/photo.png" height="15px" width="15px" /> Photos
           </div>
           <div class="item">
-            <img src="images/video.png" height="15px" width="15px"/> Videos
+            <img id="video" src="images/video.png" height="15px" width="15px" /> Videos
           </div>
           <div class="item">
-            <img src="images/pen tool.png" height="15px" width="15px"/> Designs
+            <img id="design" src="images/pen tool.png" height="15px" width="15px" /> Designs
           </div>
           <br /><br />
           <div class="item">
-            <img src="images/pencil.png" height="15px" width="15px"/> Sketches
+            <img id="sketch" src="images/pencil.png" height="15px" width="15px" /> Sketches
           </div>
           <div class="item">
-            <img src="images/testimonial.png" height="15px" width="15px"/> Testimonials
+            <img id="testi" src="images/testimonial.png" height="15px" width="15px" /> Testimonials
           </div>
           <div class="item">
-            <img src="images/IT.png" height="15px" width="15px"/> IT Resume
+            <img id="it" src="images/IT.png" height="18px" width="18px" /> IT Resume
           </div>
           <div class="item">
-            <img src="images/contact.png" height="20px" width="20px"/> Contact
+            <img id="contact" src="images/contact.png" height="20px" width="20px" /> Contact
           </div>
         </div>
       </div>
@@ -162,10 +167,38 @@
         document.getElementById('propic').setAttribute('src', 'images/dp1-circle.png');
         document.getElementById('propic').setAttribute('width', '50%');
         document.getElementById('propic').setAttribute('height', '50%');
+        document.getElementById('photo').setAttribute('width', '20px');
+        document.getElementById('photo').setAttribute('height', '20px');
+        document.getElementById('video').setAttribute('width', '20px');
+        document.getElementById('video').setAttribute('height', '20px');
+        document.getElementById('design').setAttribute('width', '20px');
+        document.getElementById('design').setAttribute('height', '20px');
+        document.getElementById('sketch').setAttribute('width', '20px');
+        document.getElementById('sketch').setAttribute('height', '20px');
+        document.getElementById('testi').setAttribute('width', '20px');
+        document.getElementById('testi').setAttribute('height', '20px');
+        document.getElementById('it').setAttribute('width', '23px');
+        document.getElementById('it').setAttribute('height', '23px');
+        document.getElementById('contact').setAttribute('width', '25px');
+        document.getElementById('contact').setAttribute('height', '30px');
       } else {
         document.getElementById('propic').setAttribute('src', 'images/dp1.jpg');
         document.getElementById('propic').setAttribute('width', '100%');
         document.getElementById('propic').setAttribute('height', '100%');
+        document.getElementById('photo').setAttribute('width', '15px');
+        document.getElementById('photo').setAttribute('height', '15px');
+        document.getElementById('video').setAttribute('width', '15px');
+        document.getElementById('video').setAttribute('height', '15px');
+        document.getElementById('design').setAttribute('width', '15px');
+        document.getElementById('design').setAttribute('height', '15px');
+        document.getElementById('sketch').setAttribute('width', '15px');
+        document.getElementById('sketch').setAttribute('height', '15px');
+        document.getElementById('testi').setAttribute('width', '15px');
+        document.getElementById('testi').setAttribute('height', '15px');
+        document.getElementById('it').setAttribute('width', '18px');
+        document.getElementById('it').setAttribute('height', '18px');
+        document.getElementById('contact').setAttribute('width', '20px');
+        document.getElementById('contact').setAttribute('height', '20px');
       }
     }
 
