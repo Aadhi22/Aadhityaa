@@ -3,7 +3,14 @@ body {
   height: 500px;
   background-color: black;
   color: white;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
 .item:hover{
 background-color: red;
 }
@@ -33,9 +40,97 @@ background-color: red;
   display: inline-block;
   font-size: 25px;
 }
-#coffee{
+
+.photosmenu {
+  width: 100%;
+  height: auto;
+  font-family: Cairo;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #070011;
+}
+
+.pmenu1 {
+  width: 200px;
+  height: 45px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.pdropmenu {
+  width: 200px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  font-size: 25px;
+}
+
+.pback {
+  padding-left: 25px;
+  display: inline-block;
+  float: left;
+}
+/* dropdown structure starts*/
+.pdropdiv {
+cursor: pointer;
+}
+
+.pdropmenu {
+position: relative;
+display: inline-block;
+}
+
+.pdropdown-content {
+display: none;
+position: absolute;
+background-color: #8c46f0;
+overflow: auto;
+width: 200px;
+}
+
+.pdropdown-content a {
+color: black;
+text-decoration: none;
+display: block;
+}
+
+.pdropmenu a:hover {background-color: #070011; color: white;}
+
+.show {display: block;}
+/* dropdown structure ends*/
+
+.dandm{
+  width: 100%;
+  display: block ;
+  padding-top: 50px;
+}
+.dandm_in1{
+  width: 70%;
+}
+
+.group1 {
+  display: inline-block;
+}
+.group2 {
+  display: inline;
+
+}
+#image_elements {
+  padding-right: 15px;
+}
+
+#pic11{
+  padding-top: 0.5px;
+}
+#coffee {
   font-size:30px;
 }
+
+
 h1 {
   font-size: 60px;
 }
@@ -49,10 +144,20 @@ h2 {
   font-size: 40px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width:1000px) {
   body {
     width: 1525px;
     height: 730px;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  body::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
   }
 
   .homepage {
@@ -86,11 +191,104 @@ h2 {
     text-align: center;
     display: inline-block;
     font-size: 15px;
+    cursor: pointer;
   }
+.outer{
+  background-color: #070011;
+}
+  .photosmenu {
+    width: 100%;
+    height: auto;
+    font-family: Cairo;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #070011;
+  }
+
+  .pmenu1 {
+    width: 130px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .pdropmenu {
+    width: 130px;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .pback {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+  }
+
+/* dropdown structure starts*/
+  .pdropdiv {
+  cursor: pointer;
+}
+
+.pdropmenu {
+  position: relative;
+  display: inline-block;
+}
+
+.pdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8c46f0;
+  overflow: auto;
+  width: 120px;
+}
+
+.pdropdown-content a {
+  color: black;
+
+  text-decoration: none;
+  display: block;
+}
+
+.pdropmenu a:hover {background-color: #070011; color: white;}
+
+.show {display: block;}
+/* dropdown structure ends*/
+
+.dandm{
+  width: 100%;
+  display: block ;
+  padding-top: 50px;
+}
+.dandm_in1{
+  width: 100%;
+  display: flex ;
+  padding-left: 120px;
+}
+
+#image_elements {
+  padding-right: 15px;
+  }
+
+#pic11{
+  padding-top: 12px;
+}
+
   #coffee{
     font-size:15px;
   }
 
+  #pback1 img {
+    height: 25px;
+    width: 25px;
+  }
 
   h1 {
     font-size: 40px;
