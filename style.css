@@ -109,7 +109,7 @@ display: block;
   padding-top: 50px;
 }
 .dandm_in1{
-  width: 70%;
+  width: 90%;
 }
 
 .group1 {
@@ -120,7 +120,7 @@ display: block;
 
 }
 #image_elements {
-  padding-right: 15px;
+  padding: 25px;
 }
 
 #pic11{
@@ -270,16 +270,13 @@ a {
 .dandm_in1{
   width: 100%;
   display: flex ;
-  padding-left: 120px;
+  padding-left: 10px;
 }
 
 #image_elements {
-  padding-right: 15px;
+  padding: 25px;
   }
 
-#pic11{
-  padding-top: 12px;
-}
 
   #coffee{
     font-size:15px;
@@ -289,10 +286,10 @@ a {
     height: 25px;
     width: 25px;
   }
-  
+
   a {
-  text-decoration: none;
-}
+    text-decoration: none;
+  }
 
   h1 {
     font-size: 40px;
