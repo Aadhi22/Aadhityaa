@@ -43,7 +43,7 @@ background-color: red;
 
 .photosmenu {
   width: 100%;
-  height: auto;
+  height: 45px;
   font-family: Cairo;
   position: fixed;
   top: 0;
@@ -103,12 +103,97 @@ display: block;
 .show {display: block;}
 /* dropdown structure ends*/
 
+.videosmenu {
+  width: 100%;
+  height: 45px;
+  font-family: Cairo;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #070011;
+}
+
+.vmenu1 {
+  width: 200px;
+  height: 45px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.vdropmenu {
+  width: 200px;
+  height: 45px;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  font-size: 25px;
+}
+
+.vback {
+  padding-left: 25px;
+  display: inline-block;
+  float: left;
+}
+/* dropdown structure starts*/
+.vdropdiv {
+cursor: pointer;
+}
+
+.vdropmenu {
+position: relative;
+display: inline-block;
+}
+
+.vdropdown-content {
+display: none;
+position: absolute;
+background-color: #8c46f0;
+overflow: auto;
+width: 200px;
+}
+
+.vdropdown-content a {
+color: black;
+text-decoration: none;
+display: block;
+}
+
+.vdropmenu a:hover {background-color: #070011; color: white;}
+
+.show {display: block;}
+/* dropdown structure ends*/
+
 .dandm{
   width: 100%;
   display: block ;
   padding-top: 50px;
 }
+
+#dandm{
+  width: 100%;
+  display: block ;
+  padding-top: 50px;
+}
+
 .dandm_in1{
+  width: 90%;
+}
+
+.mobile{
+  width: 100%;
+  display: none ;
+  padding-top: 50px;
+}
+
+#mobile{
+  width: 100%;
+  display: none ;
+  padding-top: 50px;
+}
+
+.mobile_in1{
   width: 90%;
 }
 
@@ -117,10 +202,12 @@ display: block;
 }
 .group2 {
   display: inline;
-
 }
+
 #image_elements {
   padding: 25px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #pic11{
@@ -196,14 +283,15 @@ a {
 .outer{
   background-color: #070011;
 }
-  .photosmenu {
+ .photosmenu {
     width: 100%;
-    height: auto;
+    height: 45px;
     font-family: Cairo;
     position: fixed;
     top: 0;
     right: 0;
     background-color: #070011;
+    justify-content: space-around;
   }
 
   .pmenu1 {
@@ -262,7 +350,79 @@ a {
 .show {display: block;}
 /* dropdown structure ends*/
 
+.videosmenu {
+   width: 100%;
+   height: 45px;
+   font-family: Cairo;
+   position: fixed;
+   top: 0;
+   right: 0;
+   background-color: #070011;
+   justify-content: space-around;
+ }
+
+ .vmenu1 {
+   width: 130px;
+   height: 30px;
+   color: white;
+   text-align: center;
+   display: inline-block;
+   font-size: 15px;
+   cursor: pointer;
+ }
+
+ .vdropmenu {
+   width: 130px;
+   height: 30px;
+   display: inline-block;
+   float: right;
+   text-align: center;
+   font-size: 15px;
+   cursor: pointer;
+ }
+
+ .vback {
+   display: inline-block;
+   float: left;
+   cursor: pointer;
+ }
+
+/* dropdown structure starts*/
+ .vdropdiv {
+ cursor: pointer;
+}
+
+.vdropmenu {
+ position: relative;
+ display: inline-block;
+}
+
+.vdropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #8c46f0;
+ overflow: auto;
+ width: 120px;
+}
+
+.vdropdown-content a {
+ color: black;
+
+ text-decoration: none;
+ display: block;
+}
+
+.vdropmenu a:hover {background-color: #070011; color: white;}
+
+.show {display: block;}
+/* dropdown structure ends*/
+
 .dandm{
+  width: 100%;
+  display: block ;
+  padding-top: 50px;
+}
+#dandm{
   width: 100%;
   display: block ;
   padding-top: 50px;
@@ -273,10 +433,43 @@ a {
   padding-left: 10px;
 }
 
+.mobile{
+  width: 100%;
+  display: none ;
+  padding-top: 50px;
+}
+#mobile{
+  width: 100%;
+  display: none ;
+  padding-top: 50px;
+}
+.mobile_in1{
+  width: 100%;
+  display: flex ;
+  padding-left: 10px;
+}
+
 #image_elements {
   padding: 25px;
+  width: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
   }
 
+  .vcapture{
+    width: 100%;
+    display: none ;
+    padding-top: 50px;
+  }
+  #vcapture{
+    width: 100%;
+    display: block ;
+    padding-top: 50px;
+  }
+  .vcapture_in1{
+    width: 100%;
+  }
 
   #coffee{
     font-size:15px;

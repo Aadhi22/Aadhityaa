@@ -11,7 +11,7 @@ function myFunction(x) {
 }
 
 /* dropdown structure starts*/
-function dropfn() {
+function pdropfn() {
   document.getElementById("pdropdown").classList.toggle("show");
 }
 window.onclick = function(event) {
@@ -27,3 +27,13 @@ window.onclick = function(event) {
   }
 }
 /* dropdown structure ends*/
+
+function dam() {
+  document.getElementById("dandm").style.display="block";
+  document.getElementById("mobile").style.display="none";
+}
+
+function mob() {
+  document.getElementById("dandm").style.display="none";
+  document.getElementById("mobile").style.display="block";
+}
